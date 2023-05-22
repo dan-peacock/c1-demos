@@ -1,6 +1,6 @@
 # Print the Public URL
 output "vault_public_endpoint_url" {
-    value = hcp_vault_cluster.vault_cluster.public_endpoint_url
+    value = hcp_vault_cluster.vault_cluster.vault_public_endpoint_url
 }
 
 # Print the Root Token
