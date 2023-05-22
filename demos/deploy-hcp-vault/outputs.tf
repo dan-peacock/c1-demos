@@ -6,5 +6,4 @@ output "vault_public_endpoint_url" {
 # Print the Root Token
 output "vault_admin_token" {
     value = nonsensitive(hcp_vault_cluster_admin_token.vault_admin_token.token)
-    sensitive = true
 }
