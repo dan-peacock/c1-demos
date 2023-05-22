@@ -2,7 +2,7 @@ variable "hcp_client_id" {
     default = "xxxxxxx"
 }
 
-variable "hcp_secret_id" {
+variable "hcp_client_secret" {
     default = "xxxxxxx"
 }
 
