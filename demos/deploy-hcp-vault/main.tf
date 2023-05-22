@@ -17,8 +17,7 @@ resource "hcp_vault_cluster" "vault_cluster" {
   tier = var.vault_tier
 }
 
-# Create Vault Admin Token
+# Create Vault Admin Token aa
 resource "hcp_vault_cluster_admin_token" "vault_admin_token" {
   cluster_id = hcp_vault_cluster.vault_cluster.cluster_id
 }
-
