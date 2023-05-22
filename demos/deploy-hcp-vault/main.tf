@@ -13,7 +13,7 @@ resource "hcp_hvn" "example" {
 
 # Create Vault Cluster
 resource "hcp_vault_cluster" "vault_cluster" {
-  hvn_id     = var.hcp_net_id
+  hvn_id     = var.hvn_network
   cluster_id = var.vault_cluster_name
   public_endpoint = true
   tier = var.vault_tier

@@ -6,7 +6,7 @@ variable "hcp_secret_id" {
     default = "xxxxxxx"
 }
 
-variable "hvn_network" {
+variable "hvn_id" {
     default = "demo-network" 
 }
 
