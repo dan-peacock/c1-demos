@@ -32,22 +32,11 @@ resource "aws_default_security_group" "default" {
   }
 }
 
-# data "template_file" "installer" {
-#   template = "${file("config/install.sh")}"
-
-#   vars = {
-#     vault_ent_license = var.vault_ent_license
-#   }
-# }
-
-
-
 resource "aws_instance" "vault" {
   ami = var.ami
   instance_type   = var.instance_type
   key_name        = var.ssh_keyname
   security_groups = [aws_default_security_group.default.name]
-#   user_data = "${file("install.sh")}"
   user_data = templatefile("${path.module}/config/install.sh.tpl", {vault_ent_license = var.vault_ent_license})
   tags = {
     Name = "Vault ENT with SoftHSM"

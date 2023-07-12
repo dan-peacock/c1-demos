@@ -35,9 +35,9 @@ vault_ui = [
 ]
 ```
 
-vault:
+vault:  
 ssh into the instance using the connection_string and then
-- start the vault process  in backgroup
+- start the vault process  in background  
 `nohup vault server -config=vault/config.hcl &`
 - optional: see vault logs  
 `tail [-f] nohup.out`
