@@ -1,0 +1,2 @@
+ssh_keyname = "a-key-in-aws"
+vault_ent_license = "unoduetre-alza"
